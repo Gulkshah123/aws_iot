@@ -1,0 +1,14 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+Description: 
+
+Parameters:
+  PublishTopic:
+    Type: String
+    Default: "topic_1"
+    Description: (Required) Provide a topic to publish on. The default will publish on topic_1
+  SubscribeTopic:
+    Type: String
+    Default: "topic_2"
+    Description: (Required) Provide a topic for the IoT rule to query. The default will trigger on any message published to topic_2
+  
